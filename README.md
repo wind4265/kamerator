@@ -1,1 +1,9 @@
 # kamerator
+
+kameratorはturtlesimの亀をオンラインから操作するパッケージです。
+1.launchファイルでウェブサーバノードとturtlesim_nodeをたちあげる。
+2.ウェブのUIから速度と角速度を指定してPublishすると
+3.速度と角速度を格納したtopicがturtlesim_nodeに送られ亀が動く。
+
+出来なかったこと
+・ボタンを押したらその方向に亀が進むようにすること。
