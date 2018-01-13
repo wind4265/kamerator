@@ -1,0 +1,7 @@
+<launch>
+	<node pkg = "kamerator" name = "webserver" type = "webserver.py" args = "8000" />
+	<node pkg = "turtlesim" name = "sim" type = "turtlesim_node"/>
+ 	<include file = "$(find rosbridge_server)/launch/rosbridge_websocket.launch">
+ 	<arg name = "port" value = "9000"/>
+	</include>
+</launch>
